@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(199, 197, 197);
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.calculator {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.nbr {
+    background-color: rgb(73, 73, 73);
+    color: white;
+    transition: 0.3s;
+}
+
+.op {
+    background-color: rgb(224, 155, 26);
+    color: white;
+    transition: 0.3s;
+}
+
+.display {
+    height: 150px;
+    width: auto;
+    padding: 20px;
+    font-size: 40px;
+}
+button#equal{
+    height: 130px;
+}
+button#clear{
+    background-color: rgb(165,165,165);
+    color: black;
+    transition: 0.3s;
+}
+.nbr:hover{
+    background-color: rgb(148, 148, 148);
+}
+.op:hover{
+    background-color: rgb(247, 190, 86);
+}
+button#clear:hover{
+    background-color: rgb(240, 240, 240);
+}
+.op:focus{
+    background-color: white;
+    color: rgb(224, 155, 26);
+}
+.nbr:focus{
+    color: rgb(73, 73, 73);
+    background-color: white;
+}
+button#clear:focus{
+    color: rgb(165,165,165);
+    background-color: black;
+}
